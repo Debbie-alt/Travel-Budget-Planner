@@ -5,7 +5,7 @@ export default function Navbar (){
       return(
             <nav className={`flex justify-between items-center p-8 ${pathname !== '/' ? 'bg-green-600' : null}`}>
               <h1 className="font-bold text-3xl text-white italic font-serif">
-              Travel Budget
+              T<span className="font-bold text-2xl text-white italic font-serif">raveluxe</span>
             </h1>
             <ul className="flex space-x-8 text-white font-medium">
               <li>

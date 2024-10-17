@@ -1,11 +1,12 @@
+'use client'
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
-import { FaHeart } from "react-icons/fa"; // Import the heart icon from react-icons
+import Features from  "@/components/Features"
 
 export default function Home() {
   return (
-    <div className="bg-[url('/jet.jpg')] bg-cover bg-center p-0 h-screen flex flex-col justify-between">
+    <>
+    <div className="bg-[url('/jet.jpg')] bg-cover bg-center h-screen p-0 flex flex-col justify-between">
        <Navbar/>
      
       {/* Hero Section */}
@@ -21,8 +22,11 @@ export default function Home() {
           Get Started
         </button>
       </div>
-
-      <Footer />
+      
     </div>
+     <Features/>
+
+     <Footer />
+    </>
   );
 }
